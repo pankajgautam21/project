@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link href="college.css">
+<link rel="stylesheet" href="college.css">
+<link rel="stylesheet" href="complaint-form.css">
+<header>
+     <h1 class="logo"></h1> 
+    <input type="checkbox" class="nav-toggle" id="nav-toggle">
+    <nav>
+      <ul>
+        <li> <a href="index.html">Home</a></li>
+        <li> <a class="active" href="form.html">Complaint</a></li>
+        <li> <a href="contactus.html">Contact us</a></li>
+      </ul>
+    </nav>
+    <label for="nav-toggle" class="nav-toggle-label">
+    </label>
+</header>
+    <link rel="stylesheets" href="C:\Users\PAWAN GAUTAM\Desktop\clg maintenance  system\index.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form class="form-box" name="complaint_form">
+             <h1>COMPLAINT FORM</h1>
+          <div class="row">
+            <div class="col-25">
+              <label for="fname">First Name</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="lname">Last Name</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="email">E-mail</label>
+            </div>
+          <div class="col-75">
+            <input type="email" id="email" name="E-mail" placeholder="Your email id.."  required>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+              <label for="gender">Gender</label>
+            </div>
+            <div class="col-75">
+              <input type="radio" id="male" name="Gender">
+              <label>Male</label>
+              <input type="radio" id="Female" name="Gender">
+              <label>Female</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="year">Year</label>
+            </div>
+            <div class="col-75">
+              <select id="year" name="year" placeholder="choose option">
+                <option value="" disabled selected hidden>choose Year</option>
+                <option value="first" placeholder="choose option">first</option>
+                <option value="Second">Second</option>
+                <option value="Third">Third</option>
+                <option value="final">final</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="Matter">Matter</label>
+            </div>
+            <div class="col-75">
+              <select id="Matter" name="Matter" placeholder="choose option">
+                <option value="" disabled selected hidden>choose option</option>
+                <option value="Furniture" placeholder="choose option">Furniture</option>
+                <option value="Electricity">Electricity</option>
+                <option value="Sanitary">Sanitary</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-25">
+              <label for="Description">Description</label>
+            </div>
+            <div class="col-75">
+              <textarea id="Description" name="Description" placeholder="Write something.." style="height:200px" required></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <input type="submit" type="reset" value="Submit" onclick="fun()">
+            <input type="reset" value="Reset">
+            <script>
+              function fun()
+              {
+                alert("your response has been sucessfully submited");
+                document.complaint_form.reset();
+                
+              }
+            </script>
+          </div>
+        </form>
+      </div>
+      
+</body>
+</html>
